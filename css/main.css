@@ -310,12 +310,40 @@ body {
 
 .container {
   height: 100%;
-  display: flex; }
-  .container .forminfo {
+  display: flex;
+  background-color: white; }
+  .container .form-info {
     width: 450px;
     min-width: 300px;
-    border-right: 3px solid black;
-    background-color: brown; }
+    border-right: 1px solid #ecebef;
+    text-align: center;
+    padding-top: 250px; }
   .container .form {
-    width: 650px;
-    min-width: 500px; }
+    width: 950px;
+    min-width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px; }
+
+.tab {
+  display: flex;
+  flex-direction: column; }
+  .tab-pointer {
+    align-items: center; }
+    .tab-pointer-item {
+      display: inline-block;
+      color: white;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      background-color: #695a96;
+      border: none;
+      border-radius: 50%; }
+      .tab-pointer-item + .tab-pointer-item {
+        margin-left: 15px; }
+      .tab-pointer-item span {
+        display: block;
+        padding-top: 5px; }
+  .tab-title {
+    font-weight: bold; }

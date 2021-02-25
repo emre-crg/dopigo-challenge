@@ -1,3 +1,6 @@
-@import "variable";
-@import "normalize";
-@import "global";
+@import "config/variable";
+@import "global/normalize";
+@import "global/global";
+
+@import "components/form";
+@import "components/formInfo";
