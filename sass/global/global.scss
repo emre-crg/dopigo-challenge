@@ -13,18 +13,29 @@ body {
   .form-info {
     width: 450px;
     min-width: 300px;
-    border-right: 1px solid $color-grey; 
-    text-align: center; 
+    border-right: 1px solid $color-grey;
+    text-align: center;
     padding-top: 250px;
-    
   }
 
   .form {
     width: 950px;
     min-width: 500px;
-    text-align: center; 
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding-top: 100px;
   }
+}
+
+.showTab {
+  display: block;
+}
+
+.hideTab {
+  display: none;
+}
+
+.red {
+  background-color: red;
 }

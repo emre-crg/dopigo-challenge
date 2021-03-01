@@ -326,6 +326,15 @@ body {
     margin-right: auto;
     padding-top: 100px; }
 
+.showTab {
+  display: block; }
+
+.hideTab {
+  display: none; }
+
+.red {
+  background-color: red; }
+
 .tab {
   display: flex;
   flex-direction: column; }
