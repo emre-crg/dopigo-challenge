@@ -2,33 +2,37 @@
   display: flex;
   flex-direction: column;
 
-  &-pointer {
-    
-    align-items: center;
-  
-    &-item {
-      display: inline-block;
-      color: white;
-      height: 30px;
-      width: 30px;
-      text-align: center;
-      background-color: $color-primary;
-      border: none;
-      border-radius: 50%;
-      
-      & + & {
-        margin-left: 15px;
-      }
-
-      span {
-        display: block;
-        padding-top: 5px;
-      }
-    }
-  }
-
   &-title {
     font-weight: bold;
   }
 }
 
+.indicator {
+    
+  align-items: center;
+
+  &-item {
+    display: inline-block;
+    color: $color-grey-dark;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background-color: $color-grey;
+    border: none;
+    border-radius: 50%;
+    
+    & + & {
+      margin-left: 15px;
+    }
+
+    span {
+      display: block;
+      padding-top: 5px;
+    }
+  }
+
+  .selected {
+    color: white;
+    background-color: $color-primary;
+  }
+}

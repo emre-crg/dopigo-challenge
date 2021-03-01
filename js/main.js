@@ -18,32 +18,21 @@ function showTab(n) {
       tabForm[i].style.display = "none";
     }      
   }
-  
 
-
-  //... and fix the Previous/Next buttons:
-  // if (n == 0) {
-  //   document.getElementById("prevBtn").style.display = "none";
-  // } else {
-  //   document.getElementById("prevBtn").style.display = "inline";
-  // }
-  // if (n == (x.length - 1)) {
-  //   document.getElementById("nextBtn").innerHTML = "Submit";
-  // } else {
-  //   document.getElementById("nextBtn").innerHTML = "Next";
-  // }
-  //... and run a function that will display the correct step indicator:
-  // fixStepIndicator(n)
+  fixStepIndicator(n)
 }
 
 function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = $(".step");
-  // for (i = 0; i < x.length; i++) {
-  //   x[i].className = x[i].className.replace(" active", "");
-  // }
-  // //... and adds the "active" class on the current step:
-  // x[n].className += " active";
+
+  if($(".indicator-item").is(".selected")) {
+    $(".indicator-item").removeClass("selected")
+  }
+
+  var stepItem = $(".indicator").children();
+
+  for (let i = 0; i < n + 1; i++) {
+    stepItem[i].classList.add('selected');    
+  }
 }
 
 function nextPrev(n) {
